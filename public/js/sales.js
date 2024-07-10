@@ -11,7 +11,7 @@ function addSale() {
   const minutes = currentDate.getMinutes()
   const time = `${hours}:${minutes} ${hours >= 12 ? "PM" : "AM"}`
 
-  console.log(currentHour)
+  console.log(currentDate)
 
   if (!productName || !quantity || !unitPrice) {
     alert("Por favor, complete todos los campos")
@@ -39,7 +39,7 @@ function addSale() {
     unitPrice,
     discount,
     totalPrice,
-    hour: currentHour,
+    hour: currentDate,
   }
 
   sales.push(sale)
