@@ -6,9 +6,9 @@ function addSale() {
   const productName = document.getElementById("productName").value
   const quantity = parseInt(document.getElementById("quantity").value)
   const unitPrice = parseFloat(document.getElementById("unitPrice").value)
-  const currentHour = new Date()
-  const hours = currentHour.getHours()
-  const minutes = currentHour.getMinutes()
+  const currentDate = new Date()
+  const hours = currentDate.getHours()
+  const minutes = currentDate.getMinutes()
   const time = `${hours}:${minutes} ${hours >= 12 ? "PM" : "AM"}`
 
   console.log(currentHour)
