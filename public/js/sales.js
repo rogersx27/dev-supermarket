@@ -112,7 +112,7 @@ function updateSalesPerHour() {
   sortedSalesByHour.forEach(([hour, count]) => {
     const li = document.createElement("li")
     // aplica negrito solo a la hora
-    li.innerHTML = `Fecha <strong>${hour}</strong>: ${count} ventas`
+    li.innerHTML = `Hora <strong>${hour}</strong>: ${count} ventas`
     salesPerHour.appendChild(li)
   })
 }
